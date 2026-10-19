@@ -1,0 +1,41 @@
+etape,action,variables,cellules,justification
+2,dates décodées en nombres,sg,190,"Excel a converti des décimaux en dates ; conversion réversible, valeurs validées par plausibilité"
+2,dates décodées en nombres,sc,236,"Excel a converti des décimaux en dates ; conversion réversible, valeurs validées par plausibilité"
+2,dates décodées en nombres,pot,264,"Excel a converti des décimaux en dates ; conversion réversible, valeurs validées par plausibilité"
+2,dates décodées en nombres,hemo,295,"Excel a converti des décimaux en dates ; conversion réversible, valeurs validées par plausibilité"
+2,dates décodées en nombres,rc,245,"Excel a converti des décimaux en dates ; conversion réversible, valeurs validées par plausibilité"
+2,dates décodées en nombres,bu,1,"Excel a converti des décimaux en dates ; conversion réversible, valeurs validées par plausibilité"
+2,dates décodées en nombres,sod,1,"Excel a converti des décimaux en dates ; conversion réversible, valeurs validées par plausibilité"
+3,'?' remplacé par NaN,"pcv, wc, rc",3,'?' est un code de valeur manquante
+4,conversion en float64,14 variables numériques,14,mesures stockées en texte ; errors='raise' pour interdire toute perte silencieuse
+5,contrôle sans correction,11 variables catégorielles,0,aucune modalité parasite : aucune correction nécessaire
+6,"valeur mise à NaN (id 21, ancienne valeur 4.5)",sod,1,valeur physiologiquement impossible ; correction non démontrable
+6,"valeur mise à NaN (id 61, ancienne valeur 39.0)",pot,1,valeur physiologiquement impossible ; correction non démontrable
+6,"valeur mise à NaN (id 128, ancienne valeur 47.0)",pot,1,valeur physiologiquement impossible ; correction non démontrable
+8,extrêmes conservés sans modification,"sc, bu",24,"valeurs possibles en insuffisance rénale avancée, toutes chez des ckd. Doute non vérifiable : id 148 (sc 48,1 / bu 26) et id 6 (sc 24 / bu 54)"
+8,valeur conservée et signalée comme douteuse (id 173),bu,1,"bu = 1,5 non démontrablement impossible ; à inclure dans une analyse de sensibilité"
+9,analyse des manquants par classe (khi-deux),toutes,1015,les manquants sont fortement liés à la classe pour 12 variables : ils ne sont pas aléatoires
+10,catégorie 'unknown',rbc,152,manquants nombreux et liés à la classe : l'absence d'examen est conservée comme information
+10,catégorie 'unknown',pc,65,manquants nombreux et liés à la classe : l'absence d'examen est conservée comme information
+10,mode = 'notpresent',pcc,4,"manquants très rares (<= 1 %), effet négligeable"
+10,mode = 'notpresent',ba,4,"manquants très rares (<= 1 %), effet négligeable"
+10,mode = 'no',htn,2,"manquants très rares (<= 1 %), effet négligeable"
+10,mode = 'no',dm,2,"manquants très rares (<= 1 %), effet négligeable"
+10,mode = 'no',cad,2,"manquants très rares (<= 1 %), effet négligeable"
+10,mode = 'good',appet,1,"manquants très rares (<= 1 %), effet négligeable"
+10,mode = 'no',pe,1,"manquants très rares (<= 1 %), effet négligeable"
+10,mode = 'no',ane,1,"manquants très rares (<= 1 %), effet négligeable"
+11,imputation itérative (classe en appui),age,9,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),bp,12,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),sg,47,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),al,46,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),su,49,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),bgr,44,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),bu,19,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),sc,17,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),sod,88,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),pot,90,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),hemo,52,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),pcv,71,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),wc,106,estimation à partir des autres mesures du patient ; garde-fous de plage
+11,imputation itérative (classe en appui),rc,131,estimation à partir des autres mesures du patient ; garde-fous de plage
